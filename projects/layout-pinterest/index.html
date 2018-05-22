@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Layout - pinterest</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: arial
+    }
+    .container {
+      display: grid;
+      justify-content: center;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(auto-fill, 250px);
+    }
+    .item {
+      padding: 10px;
+      border-radius: 5px;
+      background: #f2f2f2;
+      border: 1px solid red;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .level-1 {
+      grid-row-end: span 1;
+    }
+    .level-2 {
+      grid-row-end: span 2;
+    }
+    .level-3 {
+      grid-row-end: span 3;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item level-1">
+        <img src="./images/house.jpg" alt="casa">
+      </div>
+      <div class="item level-2">
+        <img src="./images/camisa.jpg" alt="casa">
+      </div>
+      <div class="item level-3">
+        <img src="./images/pagina.jpg" alt="casa">
+      </div>
+      <div class="item level-2">
+        <img src="./images/joel.jpg" alt="casa">
+      </div>
+      <div class="item level-1">
+        <img src="./images/troll.jpeg" alt="casa">
+      </div>
+      <div class="item level-2">
+        <img src="./images/senior.png" alt="casa">
+      </div>
+      <div class="item level-3">
+        <img src="./images/pagina.jpg" alt="casa">
+      </div>
+      <div class="item level-1">
+        <img src="./images/house.jpg" alt="casa">
+      </div>
+      <div class="item level-2">
+        <img src="./images/camisa.jpg" alt="casa">
+      </div>
+      <div class="item level-3">
+        <img src="./images/Kratos.jpg" alt="casa">
+      </div>
+      <div class="item level-2">
+        <img src="./images/joel.jpg" alt="casa">
+      </div>
+      <div class="item level-1">
+        <img src="./images/troll.jpeg" alt="casa">
+      </div>
+      <div class="item level-2">
+        <img src="./images/senior.png" alt="casa">
+      </div>
+      <div class="item level-3">
+        <img src="./images/atreus.jpg" alt="casa">
+      </div>
+      <div class="item level-1">
+        <img src="./images/viejo.jpg" alt="casa">
+      </div>
+      <div class="item level-3">
+        <img src="./images/ellie.jpeg" alt="casa">
+      </div>
+      <div class="item level-3">
+        <img src="./images/spiderman.jpg" alt="casa">
+      </div>
+      <div class="item level-3 levelWidth-3">
+        <img src="./images/samurai.jpg" alt="casa">
+      </div>
+    </div>
+
+  </body>
+</html>
