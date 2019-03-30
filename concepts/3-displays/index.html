@@ -18,13 +18,15 @@
       }
       .item {
         padding: 10px;
-        background: lightblue;
-        border: 1px solid midnightblue;
+        color: white;
+        background:rgb(39, 164, 255);
+        border: 1px solid rgb(2, 16, 97) ;
       }
       .container > .item:nth-of-type(4) {
         overflow: auto;
         /* display: subgrid; No está disponible aún. Su función es heradar la configuación del grid padre*/
         display: grid;
+        display: inline-grid;
         grid-template: 50px 50px 50px / 100px 100px 100px;
         /* display: inline-grid; Muestra el grid en una sola línea*/
 
